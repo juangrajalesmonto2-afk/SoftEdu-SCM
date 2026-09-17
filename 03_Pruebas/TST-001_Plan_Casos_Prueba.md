@@ -2,7 +2,7 @@
 
 **Identificación del CI:** TST-001  
 **Proyecto:** SoftEdu-SCM  
-**Versión:** 1.1
+**Versión:** 1.2
 **Fecha:** 11/09/2026
 
 ---
