@@ -1,32 +1,91 @@
-# Documento de Diseño del Sistema (DDS)
+# DIS-001 - Diseño del Sistema SoftEdu
 
-**Identificación del CI:** DIS-001  
-**Proyecto:** SoftEdu-SCM  
-**Versión:** 1.0  
-**Estado:** Propuesto / Línea Base  
-**Fecha:** 11/09/2026  
-**Responsable:** Equipo de Desarrollo SoftEdu  
+## Información del elemento de configuración
 
----
+- Código del CI: DIS-001  
+- Nombre: Diseño del Sistema
+- Proyecto: SoftEdu
+- Versión: 1.1  
+- Estado: En modificación por CR-001  
+- Fecha: 11/09/2026  
+- Responsable: Equipo SoftEdu  
 
-## 1. Historial de Versiones
-| Versión | Fecha | Descripción del Cambio | Autor |
-| :---: | :---: | :--- | :--- |
-| 1.0 | 11/09/2026 | Definición inicial de la arquitectura y componentes del sistema. | Equipo SoftEdu |
+## Historial de Versiones
 
----
+| Versión | Fecha | Descripción del cambio | Responsable |
+|---------|-------|------------------------|-------------|
+| 1.0 | 09/09/2026 | Diseño inicial del sistema | Equipo SoftEdu |
+| 1.1 | 16/09/2026 | Se agrega el atributo teléfono a la entidad Estudiante según CR-001 | camiGuarin |
 
-## 2. Descripción General de la Arquitectura
-El sistema `SoftEdu-SCM` sigue una arquitectura modular en Python orientada a objetos para la gestión de estudiantes.
+## 1. Descripción General 
 
----
+SoftEdu se organiza en tres componentes principales:
 
-## 3. Módulos y Componentes Principales
-* **Componente `Estudiante`:** Representa la entidad de datos (ID, Nombre, Carrera, Estado).
-* **Componente `GestionEstudiantes`:** Maneja la lógica de negocio (Registrar, Buscar, Listar).
+1. Gestión de estudiantes.
+2. Gestión de cursos.
+3. Gestión de matrículas.
 
----
+## 2. Entidades principales 
 
-## 4. Trazabilidad con Requisitos
-* **REQ-001 (RF-001):** Implementado en la clase `Estudiante` y el método `registrar_estudiante()`.
-* **REQ-001 (RF-002):** Implementado en el método `buscar_estudiante()`.
+### Estudiante 
+
+La entidad Estudiante contiene inicialmente los siguientes atributos:
+
+- identificacion
+- nombreCompleto
+- correoElectronico
+- telefono
+
+### Curso
+
+La entidad Curso contiene:
+
+- codigoCurso
+- nombreCurso
+- numeroCreditos
+
+### Matricula
+
+La entidad Matricula contiene:
+
+- identificacionEstudiante
+- codigoCurso
+- fechaMatricula
+
+## 3. Relación entre requisitos y diseño
+
+| Requisito | Elemento de diseño asociado |
+|-----------|-----------------------------|
+| RF-01 Registrar estudiante | Entidad Estudiante (incluye atributo telefono) |
+| RF-02 Consultar estudiante | Entidad Estudiante |
+| RF-03 Registrar curso | Entidad Curso |
+| RF-04 Matricular estudiante | Entidad Matricula |
+
+## 4. Flujo general 
+
+### Registro de estudiante
+
+1. El usuario ingresa la información del estudiante.
+2. El sistema valida los datos obligatorios.
+3. El sistema crea un objeto Estudiante.
+4. El sistema almacena la información.
+
+### Registro de curso
+
+1. El usuario ingresa los datos del curso.
+2. El sistema valida la información.
+3. El sistema almacena el curso.
+
+### Matrícula
+
+1. El usuario selecciona un estudiante.
+2. El usuario selecciona un curso.
+3. El sistema verifica que ambos existan.
+4. El sistema registra la matrícula.
+
+## 5. Trazabilidad de diseño
+
+Este diseño se deriva de los requisitos definidos en el elemento de configuración REQ-001 versión 1.1.
+
+La versión 1.1 de DIS-001 se actualiza como consecuencia de la solicitud de cambio CR-001 - Agregar teléfono al estudiante.
+Cualquier modificación que afecte la estructura de estudiantes, cursos o matrículas deberá evaluarse para determinar su impacto sobre este elemento de configuración.
