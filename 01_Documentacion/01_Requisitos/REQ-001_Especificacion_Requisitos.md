@@ -1,44 +1,84 @@
-# Especificación de Requisitos de Software (ERS)
+# REQ-001 - Especificación de Requisitos de SoftEdu
 
-**Identificación del CI:** REQ-001  
-**Proyecto:** SoftEdu-SCM  
-**Versión:** 1.0  
-**Estado:** Propuesto / Línea Base  
-**Fecha:** 11/09/2026  
-**Responsable:** Equipo de Desarrollo SoftEdu  
+## Información del elemento de configuración
 
----
+- Código del CI: REQ-001  
+- Nombre: Especificación de Requisitos
+- Proyecto: SoftEdu
+- Versión: 1.1 
+- Estado: - En modificación por CR-001  
+- Fecha: 11/09/2026  
+- Responsable: Equipo SoftEdu  
 
-## 1. Historial de Versiones
-| Versión | Fecha | Descripción del Cambio | Autor |
-| :---: | :---: | :--- | :--- |
-| 1.0 | 11/09/2026 | Creación e inicialización del documento de requisitos. | Equipo SoftEdu |
+## Historial de Versiones
 
----
+| Versión | Fecha | Descripción del cambio | Responsable |
+|---------|-------|------------------------|-------------|
+| 1.0 | 09/09/2026 | Creación inicial de la especificación de requisitos | Equipo 
+SoftEdu |
+| 1.1 | 18/09/2026 | Se agrega el número de teléfono al estudiante según CR-001 | camiGuarin |
 
-## 2. Propósito y Alcance
-* **Propósito:** Definir de manera clara y trazable las necesidades funcionales y no funcionales del módulo de gestión académica de SoftEdu.
-* **Alcance:** Este documento cubre la gestión básica de estudiantes, matrículas y registro de calificaciones para el sistema SoftEdu-SCM.
+## 1. Propósito 
 
----
+SoftEdu es un sistema académico básico destinado a gestionar estudiantes, cursos y matrículas de una institución educativa.
 
-## 3. Requisitos Funcionales (RF)
-* **RF-001:** El sistema debe permitir registrar la información básica de un estudiante (ID, Nombre, Carrera, Estado).
-* **RF-002:** El sistema debe permitir consultar la información de un estudiante registrado mediante su ID.
-* **RF-003:** El sistema debe registrar inscripciones de materias para estudiantes activos.
+## 2. Alcance: 
 
----
+El sistema permitirá registrar y consultar estudiantes, registrar cursos y asociar estudiantes a los cursos disponibles.
 
-## 4. Requisitos No Funcionales (RNF)
-* **RNF-001:** El código base debe desarrollarse en Python 3.x garantizando legibilidad y modularidad.
-* **RNF-002:** La documentación y trazabilidad de cambios deben cumplir con las buenas prácticas de SCM basadas en IEEE 828.
+## 3. Requisitos Funcionales 
 
----
+### RF-01 - Registrar estudiante 
 
-## 5. Criterios de Aceptación
-1. Todas las funciones de lectura/escritura de estudiantes deben ejecutarse sin errores fatales.
-2. Cada requisito expuesto debe tener correspondencia directa en el diseño (DIS-001) y en los casos de prueba (TST-001).
+El sistema deberá permitir registrar un estudiante con los siguientes datos: 
 
----
+- Número de identificación 
+- Nombre completo
+- Correo electrónico
+- Número de teléfono
 
-> **Nota de Control de Cambios:** Cualquier modificación a este documento posterior a la formalización de la Línea Base Inicial (BL-001) deberá solicitarse y aprobarse mediante el procedimiento formal de Control de Cambios del proyecto.
+Criterio de aceptación:
+
+El sistema debe almacenar correctamente la información del estudiante cuando todos los datos obligatorios hayan sido suministrados.
+
+### RF-02 - Consultar estudiante
+
+El sistema deberá permitir consultar la información de un estudiante utilizando su número de identificación.
+
+Criterio de aceptación:
+
+Cuando exista el estudiante, el sistema deberá mostrar sus datos registrados.
+
+### RF-03 - Registrar curso
+
+El sistema deberá permitir registrar un curso indicando:
+
+- Código del curso
+- Nombre del curso
+- Número de créditos
+
+Criterio de aceptación:
+
+El curso deberá quedar disponible para procesos posteriores de matrícula.
+
+### RF-04 - Matricular estudiante
+
+El sistema deberá permitir asociar un estudiante previamente registrado a un curso existente.
+
+Criterio de aceptación:
+
+La matrícula deberá quedar registrada cuando tanto el estudiante como el curso existan.
+
+## 4. Requisitos no funcionales
+
+### RNF-01 - Usabilidad
+
+La interfaz deberá permitir que las operaciones principales puedan realizarse de manera sencilla por usuarios administrativos.
+
+### RNF-02 - Disponibilidad
+
+El sistema deberá mantener disponible la información almacenada durante su operación normal.
+
+## 5. Observaciones de configuración
+
+Este documento constituye un Elemento de Configuración de Software identificado como REQ-001.
