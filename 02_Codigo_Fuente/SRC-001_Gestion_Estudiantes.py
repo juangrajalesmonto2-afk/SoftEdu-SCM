@@ -1,18 +1,10 @@
 # SRC-001 - Gestión de Estudiantes
 # Proyecto: SoftEdu
 # Versión: 1.1
-# Estado: En modificación por CR-001
+# Estado: Aprobado para BL-002
 # Fecha: 16/09/2026
 # Responsable: Equipo SoftEdu
 # Responsable del cambio: camiGuarin
-
-
-# SRC-001 - Gestión de Estudiantes
-# Proyecto: SoftEdu
-# Versión: 1.1
-# Estado: En modificación por CR-001
-# Fecha: 09/09/2026
-# Responsable: Equipo SoftEdu
 
 
 class Estudiante:
