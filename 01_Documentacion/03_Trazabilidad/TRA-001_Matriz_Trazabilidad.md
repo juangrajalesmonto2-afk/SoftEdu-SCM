@@ -6,7 +6,7 @@
 - Nombre: Matriz de Trazabilidad    
 - Proyecto: SoftEdu
 - Versión: 1.1 
-- Estado: En modificación por CR-001 
+- Estado: Aprobado para BL-002 
 - Fecha: 16/09/2026
 - Responsable: Equipo SoftEdu
 - Responsable del cambio: camiGuarin
@@ -17,6 +17,7 @@
 |---------|-------|------------------------|-------------|
 | 1.0 | 09/09/2026 | Creación inicial de la matriz de trazabilidad | Equipo SoftEdu |
 | 1.1 | 16/09/2026 | Actualización de la trazabilidad asociada a CR-001 - Agregar teléfono al estudiante | MInerva2026410 |
+| 1.1 | 23/09/2026 | CR-001 implementada y cerrada. PR #2 aprobado y fusionado. Se establece BL-002 / v1.1 | Equipo SoftEdu |
 
 ## 1. Objetivo
 
