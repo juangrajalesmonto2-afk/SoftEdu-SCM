@@ -6,7 +6,7 @@
 - Nombre: Plan y Casos de Prueba  
 - Proyecto: SoftEdu
 - Versión: 1.1
-- Estado: En modificación por CR-001
+- Estado: Aprobado para BL-002
 - Fecha: 11/09/2026
 - Responsable: Equipo SoftEdu
 - Responsable del cambio: camiGuarin
@@ -50,6 +50,10 @@ Datos de entrada:
 Resultado esperado: El sistema crea correctamente el estudiante y almacena identificación, nombre completo, correo electrónico y teléfono.
 
 Estado esperado: Aprobado. 
+
+Resultado de ejecución: Exitoso.
+
+Evidencia: Ejecución de SRC-001 con los datos definidos en CP-01. El sistema registró correctamente la identificación, nombre, correo electrónico y teléfono del estudiante.
 
 ### CP-02 - Consultar estudiante existente
 

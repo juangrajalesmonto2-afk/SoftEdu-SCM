@@ -6,7 +6,7 @@
 - Nombre: Especificación de Requisitos
 - Proyecto: SoftEdu
 - Versión: 1.1 
-- Estado: - En modificación por CR-001  
+- Estado: Aprobado para BL-002  
 - Fecha: 11/09/2026  
 - Responsable: Equipo SoftEdu  
 
@@ -82,3 +82,4 @@ El sistema deberá mantener disponible la información almacenada durante su ope
 ## 5. Observaciones de configuración
 
 Este documento constituye un Elemento de Configuración de Software identificado como REQ-001.
+La versión 1.1 incorpora el número de teléfono del estudiante como parte de CR-001 y queda aprobada para su inclusión en la línea base BL-002.
